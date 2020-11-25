@@ -9,28 +9,32 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="header-title">Twitter</h1>
-    <nav>
+    <h1 class="logo">Twitter</h1>
+    <nav class="header-nav">
       <ul class="nav-list">
-        <li class="nav-login">登录</li>
-        <li class="nav-register">注册</li>
+        <li><button class="login-button">登录</button></li>
+        <li><button class="signin-button">注册</button></li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <div class="login-register-module">
-      <h2 class="module-title">查看世界上正在发生的事情</h2>  
-      <form class="module-form">
-        <div>
-          <label class="module-label" for="username">电话、邮件地址或用户民</label>
-          <input class="module-username" id="username" type="text"/>
-          <a class="forget-password">忘记密码？</a>
-          <button class="module-login-btn">登录</button>
-          <span>或</span>
-          <button class="module-register-btn">注册</button>
-        </div>
-      </form>   
-    </div>
+    <form class="form">
+      <h2 class="title">查看世界上正在发生的事情</h2>
+      <div class="input">
+        <label for="username">电话、邮件地址或用户名</label>
+        <input id="username" class="info-input">
+      </div>
+      <div class="input">
+        <label for="password">密码</label>
+        <input id="password" class="info-input">
+      </div>
+      <a href="https://www.google.com/" class="hint">忘记密码？</a>
+      <div class="option">
+        <button class="form-login-button">登录</button>
+        <p>或</p>
+        <button class="form-signin-button">注册</button>
+      </div>
+    </form>
   </main>
   <script src="src/app.js"></script>
 </body>
