@@ -8,7 +8,30 @@
   <title>Title</title>
 </head>
 <body>
-  Hello World
+  <header class="header">
+    <h1 class="header-title">Twitter</h1>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-login">登录</li>
+        <li class="nav-register">注册</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="login-register-module">
+      <h2 class="module-title">查看世界上正在发生的事情</h2>  
+      <form class="module-form">
+        <div>
+          <label class="module-label" for="username">电话、邮件地址或用户民</label>
+          <input class="module-username" id="username" type="text"/>
+          <a class="forget-password">忘记密码？</a>
+          <button class="module-login-btn">登录</button>
+          <span>或</span>
+          <button class="module-register-btn">注册</button>
+        </div>
+      </form>   
+    </div>
+  </main>
   <script src="src/app.js"></script>
 </body>
 </html>
